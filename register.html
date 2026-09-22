@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="id">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Daftar — JasaSuruh</title><link rel="stylesheet" href="assets/css/style.css"></head>
+<body class="auth-page">
+  <div class="auth-shell">
+    <a class="brand auth-brand" href="index.html"><span class="brand-mark">JS</span><span>JasaSuruh</span></a>
+    <div class="auth-card"><span class="eyebrow">Mulai sekarang</span><h1>Buat akun</h1><p class="muted">Daftar sebagai pelanggan untuk mulai memesan jasa.</p>
+      <form id="registerForm" class="form-grid">
+        <label>Nama lengkap<input type="text" name="name" required placeholder="Nama kamu"></label>
+        <label>Email<input type="email" name="email" required placeholder="nama@email.com"></label>
+        <label>No. HP<input type="text" name="phone" required placeholder="08xxxxxxxxxx"></label>
+        <label>Password<input type="password" name="password" minlength="6" required placeholder="Minimal 6 karakter"></label>
+        <button class="btn btn-primary btn-lg" type="submit">Buat Akun</button>
+        <div id="formMessage" class="form-message"></div>
+      </form>
+      <p class="auth-footer">Sudah punya akun? <a href="login.html">Masuk</a></p>
+    </div>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

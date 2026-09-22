@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="id">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Dashboard — JasaSuruh</title><link rel="stylesheet" href="assets/css/style.css"></head>
+<body>
+<header class="site-header"><div class="container nav-wrap"><a class="brand" href="dashboard.html"><span class="brand-mark">JS</span><span>JasaSuruh</span></a><nav class="desktop-nav"><a class="active" href="dashboard.html">Dashboard</a><a href="order.html">Buat Pesanan</a><a href="orders.html">Pesananku</a></nav><div class="nav-actions"><button id="logoutBtn" class="btn btn-ghost">Keluar</button></div></div></header>
+<main class="section"><div class="container"><div class="welcome"><div><span class="eyebrow">Dashboard pelanggan</span><h1 id="welcomeName">Halo 👋</h1><p class="muted">Mau minta bantuan apa hari ini?</p></div><a href="order.html" class="btn btn-primary">+ Buat Pesanan</a></div>
+<div class="service-grid compact"><a class="service-card" href="order.html?type=Titip%20Belanja"><span>🛒</span><h3>Titip Belanja</h3><p>Belanja kebutuhan.</p></a><a class="service-card" href="order.html?type=Antar%20Barang"><span>📦</span><h3>Antar Barang</h3><p>Ambil dan antar.</p></a><a class="service-card" href="order.html?type=Bantuan%20Rumah"><span>🧹</span><h3>Bantuan Rumah</h3><p>Pekerjaan ringan.</p></a><a class="service-card" href="order.html?type=Jasa%20Lainnya"><span>🔧</span><h3>Jasa Lainnya</h3><p>Kebutuhan lainnya.</p></a></div>
+<div class="section-head dashboard-head"><div><h2>Pesanan terbaru</h2></div><a class="text-link" href="orders.html">Lihat semua →</a></div>
+<div id="recentOrders" class="orders-list"><div class="empty-state">Memuat pesanan...</div></div></div></main>
+<script src="assets/js/app.js"></script></body></html>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="id">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Buat Pesanan — JasaSuruh</title><link rel="stylesheet" href="assets/css/style.css"></head>
+<body>
+<header class="site-header"><div class="container nav-wrap"><a class="brand" href="dashboard.html"><span class="brand-mark">JS</span><span>JasaSuruh</span></a><nav class="desktop-nav"><a href="dashboard.html">Dashboard</a><a class="active" href="order.html">Buat Pesanan</a><a href="orders.html">Pesananku</a></nav><div class="nav-actions"><button id="logoutBtn" class="btn btn-ghost">Keluar</button></div></div></header>
+<main class="section"><div class="container narrow"><div class="page-title"><span class="eyebrow">Pesanan baru</span><h1>Suruh apa hari ini?</h1><p class="muted">Isi detail di bawah agar petugas bisa memahami tugas dengan jelas.</p></div>
+<div class="form-card"><form id="orderForm" class="form-grid two-col">
+<label>Jenis jasa<select name="service_type" id="serviceType" required><option value="">Pilih layanan</option><option>Titip Belanja</option><option>Antar Barang</option><option>Bantuan Rumah</option><option>Jasa Lainnya</option></select></label>
+<label>Jadwal<select name="schedule" required><option value="Secepatnya">Secepatnya</option><option value="Hari ini">Hari ini</option><option value="Besok">Besok</option></select></label>
+<label class="full">Lokasi pengambilan / titik awal<input type="text" name="pickup_address" required placeholder="Contoh: Jl. Pajajaran No. 10, Bogor"></label>
+<label class="full">Lokasi tujuan / alamat tugas<input type="text" name="destination_address" placeholder="Isi bila diperlukan"></label>
+<label>Estimasi harga (Rp)<input type="number" name="estimated_price" min="0" step="1000" placeholder="50000"></label>
+<label>Nomor HP yang bisa dihubungi<input type="text" name="contact_phone" required placeholder="08xxxxxxxxxx"></label>
+<label class="full">Detail pesanan<textarea name="details" rows="6" required placeholder="Jelaskan barang, instruksi, ukuran, waktu, atau permintaan khusus..."></textarea></label>
+<div class="full form-actions"><a class="btn btn-light" href="dashboard.html">Batal</a><button class="btn btn-primary" type="submit">Kirim Pesanan</button></div>
+<div id="formMessage" class="form-message full"></div>
+</form></div></div></main>
+<script src="assets/js/app.js"></script></body></html>
